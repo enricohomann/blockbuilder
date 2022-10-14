@@ -8,5 +8,6 @@
 
     <modules>
         <module>modules/bb-api</module>
+        <module>modules/bb-xrpl</module>
     </modules>
 </project>
