@@ -1,0 +1,6 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.homannsoftware.blockbuilder</groupId>
+    <artifactId>bb-xrpl</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+</project>
