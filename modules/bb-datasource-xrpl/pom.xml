@@ -13,6 +13,34 @@
     <artifactId>bb-datasource-xrpl</artifactId>
 
     <properties>
+        <xrpl4j.version>2.4.0</xrpl4j.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.xrpl</groupId>
+                <artifactId>xrpl4j-bom</artifactId>
+                <version>${xrpl4j.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.xrpl</groupId>
+            <artifactId>xrpl4j-address-codec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.xrpl</groupId>
+            <artifactId>xrpl4j-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.xrpl</groupId>
+            <artifactId>xrpl4j-model</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
