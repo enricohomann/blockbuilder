@@ -1,4 +1,4 @@
-package com.homannsoftware.blockbuilder.api.domain.ledger;
+package com.homannsoftware.blockbuilder.api.domain.datasource.ledger;
 
 import com.homannsoftware.blockbuilder.api.domain.datasource.DataSource;
 

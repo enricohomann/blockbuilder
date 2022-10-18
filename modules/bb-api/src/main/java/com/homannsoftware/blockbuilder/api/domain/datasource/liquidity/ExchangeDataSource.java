@@ -1,4 +1,4 @@
-package com.homannsoftware.blockbuilder.api.domain.provider.liquidity;
+package com.homannsoftware.blockbuilder.api.domain.datasource.liquidity;
 
 import com.homannsoftware.blockbuilder.api.domain.datasource.DataSource;
 
