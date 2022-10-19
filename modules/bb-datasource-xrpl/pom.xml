@@ -19,6 +19,12 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>com.homannsoftware.blockbuilder</groupId>
+                <artifactId>bb-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.xrpl</groupId>
                 <artifactId>xrpl4j-bom</artifactId>
                 <version>${xrpl4j.version}</version>
@@ -29,6 +35,13 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- BB -->
+        <dependency>
+            <groupId>com.homannsoftware.blockbuilder</groupId>
+            <artifactId>bb-api</artifactId>
+        </dependency>
+
+        <!-- Xrpl4J -->
         <dependency>
             <groupId>org.xrpl</groupId>
             <artifactId>xrpl4j-address-codec</artifactId>
