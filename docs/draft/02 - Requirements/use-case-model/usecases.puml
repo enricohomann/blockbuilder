@@ -7,19 +7,19 @@ actor "Application Developer" as actorUser
 
 rectangle "BlockBuilder Framework API" {
 ' UC1
-  usecase "Initiates a Framework instance" as UC1
+  usecase "UC1 Initiates a Framework instance" as UC1
 
 ' UC2
-  usecase "Invokes a Ledger DataSource" as UC2
-  usecase "Explores Ledger Records" as UC2.1
-  usecase "Submits a Ledger Transaction" as UC2.2
-  usecase "Fetches a Ledger Transaction" as UC2.3
+  usecase "UC2 Invokes a Ledger DataSource" as UC2
+  usecase "UC2.1 Explores Ledger Records" as UC2.1
+  usecase "UC2.2 Submits a Ledger Transaction" as UC2.2
+  usecase "UC2.3 Fetches a Ledger Transaction" as UC2.3
 
 'UC3
-  usecase "Invokes a Liquidity Provider DataSource" as UC3
-  usecase "Explores Exchange Prices" as UC3.1
-  usecase "Submits a Exchange Transaction" as UC3.2
-  usecase "Fetches a Exchange Transaction" as UC3.3
+  usecase "UC3 Invokes a Liquidity Provider DataSource" as UC3
+  usecase "UC3.1 Explores Exchange Prices" as UC3.1
+  usecase "UC3.2 Submits a Exchange Transaction" as UC3.2
+  usecase "UC3.3 Fetches a Exchange Transaction" as UC3.3
 
 ' UC2 extensions
   UC2 <|-- UC2.1
