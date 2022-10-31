@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+actor :Application Developer: as actorAD
+note right of actorAD
+Creates an application against the framework API.
+end note
+
+@enduml

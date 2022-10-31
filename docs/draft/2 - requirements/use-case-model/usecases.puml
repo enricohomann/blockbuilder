@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+actor "Application Developer" as actorUser
+
+rectangle "BlockBuilder Framework API" {
+' UC1
+  usecase "Initiates a Framework instance" as UC1
+
+' UC2
+  usecase "Invokes a Ledger DataSource" as UC2
+  usecase "Explores Ledger Records" as UC2.1
+  usecase "Submits a Ledger Transaction" as UC2.2
+  usecase "Fetches a Ledger Transaction" as UC2.3
+
+'UC3
+  usecase "Invokes a Liquidity Provider DataSource" as UC3
+  usecase "Explores Exchange Prices" as UC3.1
+  usecase "Submits a Exchange Transaction" as UC3.2
+  usecase "Fetches a Exchange Transaction" as UC3.3
+
+' UC2 extensions
+  UC2 <|-- UC2.1
+  UC2 <|-- UC2.2
+  UC2 <|-- UC2.3
+
+' UC3 extensions
+  UC3 <|-- UC3.1
+  UC3 <|-- UC3.2
+  UC3 <|-- UC3.3
+
+}
+actorUser --> UC1
+actorUser --> UC2
+actorUser --> UC3
+
+@enduml
