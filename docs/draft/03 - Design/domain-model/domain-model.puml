@@ -13,8 +13,11 @@ hide empty members
 class "DataSource" as DataSource {
 }
 
-class "DataSourceController" as DataSourceController {
+class "TransactionDataSource" as TransactionDataSource {
 }
+
+'class "DataSourceController" as DataSourceController {
+'}
 
 class "LedgerDataSource" as LedgerDataSource {
 }
@@ -22,22 +25,34 @@ class "LedgerDataSource" as LedgerDataSource {
 class "ExchangeDataSource" as ExchangeDataSource {
 }
 
-class "LedgerRecordReader" as LedgerRecordReader {
+'class "LedgerRecordReader" as LedgerRecordReader {
+'}
+
+'class "LedgerRecordWriter" as LedgerRecordWriter {
+'}
+
+'class "TransactionManager" as TransactionManager {
+'}
+
+class "TransactionRecord" as TransactionRecord {
 }
 
-class "LedgerRecordWriter" as LedgerRecordWriter {
-}
 
 ' Relationships Inheritance
 
-DataSource <|-- LedgerDataSource
-DataSource <|-- ExchangeDataSource
+DataSource <|-- TransactionDataSource
+
+TransactionDataSource <|-- LedgerDataSource
+TransactionDataSource <|-- ExchangeDataSource
 
 ' Relationships Cardinalities
 
-DataSource "1"--"*" DataSourceController
+TransactionDataSource "1"---"0..*" TransactionRecord
 
-LedgerDataSource "1"--"*" LedgerRecordReader
-LedgerDataSource "1"--"*" LedgerRecordWriter
+'DataSource "1"--"*" DataSourceController
+'DataSource "1"--"1" TransactionManager
+
+'LedgerDataSource "1"--"*" LedgerRecordReader
+'LedgerDataSource "1"--"*" LedgerRecordWriter
 
 @enduml
