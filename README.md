@@ -1,7 +1,8 @@
 # BlockBuilder Framework
 
-The Java-based _**BlockBuilder Framework**_ makes it possible to address multiple blockchain ledgers under one
-interface.
+The Java-based _**BlockBuilder Framework**_ makes it possible for applications to address multiple blockchain ledgers
+with a
+uniform interface.
 
 ## Specification
 
