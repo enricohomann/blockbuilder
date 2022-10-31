@@ -8,8 +8,8 @@
 
 ### Requirements
 
-[Use Case Model](docs/draft/02%20-%20Requirements/use-case-model/README.md)
-[Requirements](docs/draft/02%20-%20Requirements/README.md)
+* [Use Case Model](docs/draft/02%20-%20Requirements/use-case-model/README.md)
+* [Requirements](docs/draft/02%20-%20Requirements/README.md)
 
 ### Design
 
