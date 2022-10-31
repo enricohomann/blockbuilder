@@ -1,0 +1,43 @@
+@startuml Domain Model
+
+skinparam style strictuml
+skinparam DefaultFontName Arial
+skinparam DefaultFontSize 16
+skinparam DefaultFontStyle bold
+skinparam ArrowThickness 2.2
+skinparam ArrowColor #gray
+hide empty members
+
+' Domain Objects
+
+class "DataSource" as DataSource {
+}
+
+class "DataSourceController" as DataSourceController {
+}
+
+class "LedgerDataSource" as LedgerDataSource {
+}
+
+class "ExchangeDataSource" as ExchangeDataSource {
+}
+
+class "LedgerRecordReader" as LedgerRecordReader {
+}
+
+class "LedgerRecordWriter" as LedgerRecordWriter {
+}
+
+' Relationships Inheritance
+
+DataSource <|-- LedgerDataSource
+DataSource <|-- ExchangeDataSource
+
+' Relationships Cardinalities
+
+DataSource "1"--"*" DataSourceController
+
+LedgerDataSource "1"--"*" LedgerRecordReader
+LedgerDataSource "1"--"*" LedgerRecordWriter
+
+@enduml
